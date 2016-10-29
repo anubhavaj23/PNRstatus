@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anubh.pnrstatus.MainActivity"
+    android:id="@+id/relativelayout">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/pnrtext"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:hint="Enter PNR"
+        android:typeface="serif"
+        android:inputType="number"
+        android:maxLength="10"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PNR Status"
+        android:id="@+id/button"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/pnrtext"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:text="Train no."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="Train Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="DOJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="From"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="To"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="Class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="ChartSt."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:text="Train no."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trainno"
+            android:layout_weight="1"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:gravity="left" />
+
+        <TextView
+            android:text="Train Name"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/trainname"
+            android:layout_weight="1"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:gravity="left" />
+
+        <TextView
+            android:text="DOJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DOJ"
+            android:layout_weight="1"
+            android:gravity="left" />
+
+        <TextView
+            android:text="From"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/from"
+            android:layout_weight="1"
+            android:gravity="left" />
+
+        <TextView
+            android:text="To"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/to"
+            android:layout_weight="1"
+            android:gravity="left" />
+
+        <TextView
+            android:text="Class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Class"
+            android:layout_weight="1"
+            android:gravity="left" />
+
+        <TextView
+            android:text="Not Prep."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chartstatus"
+            android:layout_weight="1"
+            android:gravity="left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp">
+
+        <TextView
+            android:text="S.no."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:text="Booking Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:text="Current Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp">
+    </ListView>
+
+
+</RelativeLayout>
